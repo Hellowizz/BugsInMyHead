@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="exercice_4dialog">Hi!\nI think I should wash myself, but something is missing.\nCould you help me to full my washing function please?</string>
+    <string name="exercice_4algo">function goWash(dirt) :
+        \n\t\t\tboolean b = false
+        \n\t\t\twhile (b != true) :
+        \n\t\t\t\t\tuseTheShowerGel()
+        \n\t\t\t\t\tdirt --
+        \n\t\t\t\t\tif(dirt == 0)
+        \n\t\t\t\t\t\t\t\tb = true
+        \n\t\t\t\t\treturn [...]</string>
+</resources>

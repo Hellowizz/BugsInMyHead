@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.hellowizz.bugs.MainActivity">
+    tools:context="com.example.hellowizz.bugs.MainActivity"
+    android:screenOrientation="portrait">
 
     <ImageButton
     android:id="@+id/image_button_home"
-    android:layout_width="wrap_content"
+    android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:scaleType="fitXY"
     android:scaleX="1.1"
     android:scaleY="1.1"
-    android:src="@drawable/test"
+    android:src="@drawable/main_image"
     android:layout_centerHorizontal="true"/>
 
 </android.support.constraint.ConstraintLayout>

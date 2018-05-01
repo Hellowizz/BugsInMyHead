@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="story_dialog_0">Oh, it\'s you! I\'m Christopher, remember me?\nAnyway, I really need help actually...</string>
+    <string name="story_dialog_1">I\'m trying to hide it, but you know...</string>
+    <string name="story_dialog_2">...I\'m a robot</string>
+    <string name="story_dialog_3">I had a big impact on my head just now, don\'t know why, I can\'t remember.</string>
+    <string name="story_dialog_4">I\'m not hurt, thanks god. But some things are messed up in my algorithms.\nCould you help me to fix theses bugs?</string>
+    <string name="story_dialog_5">Don\'t worry if you\'re not friendly with computer things, I\'ll help you of course.</string>
+</resources>

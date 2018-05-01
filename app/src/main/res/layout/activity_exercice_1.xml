@@ -5,18 +5,232 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.hellowizz.bugs.Exercice_1"
-    android:background="#082943">
+    android:background="#082943"
+    android:screenOrientation="portrait"
+    android:layout_gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="160dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="179dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/bulleDialogue"
+                android:layout_width="175dp"
+                android:layout_height="490dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/dialogue_xml"/>
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10sp"
+                android:fontFamily="sans-serif"
+                android:text="@string/exercice_1dialog"
+                android:textColor="#082943"
+                android:textSize="14sp"
+                android:typeface="normal" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="140dp"
+            android:layout_height="180dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/chibi_1" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/movingArea"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="240dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="310dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/zone_endToPee"
+                android:layout_width="90dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_endToPee"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/endtopee"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/zone_wipe"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp">
+                <ImageView
+                    android:id="@+id/image_wipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/wipe"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/zone_endToPoo"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp">
+                <ImageView
+                    android:id="@+id/image_endToPoo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/endtoopoo"/>
+            </RelativeLayout>
 
 
-    <ImageView
-        android:id="@+id/image_endToPee"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/endtopee"/>
+        </LinearLayout>
 
-    <ImageView
-        android:id="@+id/image_wipe"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/wipe" />
+        <LinearLayout
+            android:layout_width="310dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+
+            <RelativeLayout
+                android:id="@+id/zone_if"
+                android:layout_width="90dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/image_if"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/if_exo1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/zone_takeTheToiletPaper"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp">
+                <ImageView
+                    android:id="@+id/image_takeTheToiletPaper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/takethetoiletpaper"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/zone_and"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp">
+                <ImageView
+                    android:id="@+id/image_and"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/and" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="310dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="100dp">
+
+            <LinearLayout
+                android:id="@+id/container_if"
+                android:orientation="horizontal"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/vide_exo1"
+                android:background="@drawable/vide_exo1" />
+
+            <LinearLayout
+                android:id="@+id/container_end_to_pooee"
+                android:orientation="horizontal"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/vide_exo1"
+                android:background="@drawable/vide_exo1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp" />
+
+            <LinearLayout
+                android:id="@+id/container_and"
+                android:orientation="horizontal"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/vide_exo1"
+                android:background="@drawable/vide_exo1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="310dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="140dp">
+
+            <LinearLayout
+                android:id="@+id/container_end_to_peeoo"
+                android:orientation="horizontal"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/vide_exo1"
+                android:background="@drawable/vide_exo1"/>
+
+            <LinearLayout
+                android:id="@+id/container_take_toiletpaper"
+                android:orientation="horizontal"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/vide_exo1"
+                android:background="@drawable/vide_exo1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/container_wipe"
+                android:orientation="horizontal"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/vide_exo1"
+                android:background="@drawable/vide_exo1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hellowizz.bugs.Story"
+    android:screenOrientation="portrait">
+
+    <ImageButton
+        android:id="@+id/image_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:scaleX="1.04"
+        android:scaleY="1.04"
+        android:src="@drawable/storymage" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/bulleDialogue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/dialogue_xml"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:id="@+id/textDialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10sp"
+                android:alpha="0"
+                android:text="@string/story_dialog_0"
+                android:textColor="#082943"
+                android:textSize="15sp"
+                android:typeface="normal"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
