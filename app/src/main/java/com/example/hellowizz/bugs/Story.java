@@ -54,6 +54,9 @@ public class Story extends AppCompatActivity {
                     m_textDialog.setText(getString(R.string.story_dialog_5));
                 }else if(stepInDialog == 6){
                     stepInDialog ++;
+                    m_textDialog.setText(getString(R.string.story_dialog_6));
+                }else if(stepInDialog == 7){
+                    stepInDialog ++;
                     Intent exercicesActivityIntent = new Intent(Story.this, Exercices.class);
                     startActivity(exercicesActivityIntent);
                 }

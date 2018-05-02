@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         config {
-            keyAlias 'Bugs'
+            keyAlias 'MyAndroidKey'
             keyPassword 'Bugs'
             storeFile file('C:/Users/helor/.android/debug.keystore')
             storePassword 'Bugs'
@@ -17,6 +17,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
     }
     buildTypes {
         release {
@@ -27,6 +28,8 @@ android {
             signingConfig signingConfigs.config
             debuggable true
         }
+    }
+    productFlavors {
     }
 }
 

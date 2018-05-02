@@ -4,9 +4,11 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/iconechtite"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/chibi_2"
         android:label="Bugs in my head"
-        android:roundIcon="@drawable/iconechtite"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/chibi_2"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
